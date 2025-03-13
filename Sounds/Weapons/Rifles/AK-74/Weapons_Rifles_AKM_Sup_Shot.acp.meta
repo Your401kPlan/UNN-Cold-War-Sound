@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{47A85B830AFE9C1D}Sounds/Weapons/Rifles/AK-74/Weapons_Rifles_AKM_Sup_Shot.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

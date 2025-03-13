@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{54F2850EAC66CB86}Sounds/Weapons/Rifles/AK-74/Weapons_Rifles_M21_Shot_Suppressed_SuperSonic.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

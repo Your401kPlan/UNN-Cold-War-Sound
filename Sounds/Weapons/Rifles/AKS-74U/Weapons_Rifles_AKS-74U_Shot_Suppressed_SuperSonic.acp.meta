@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{68323CAC43D2CEE1}Sounds/Weapons/Rifles/AKS-74U/Weapons_Rifles_AKS-74U_Shot_Suppressed_SuperSonic.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

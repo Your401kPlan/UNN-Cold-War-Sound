@@ -1,0 +1,8 @@
+GameProject {
+ ID "UNNColdWarSound"
+ GUID "64DA0CCC70A2FC9E"
+ TITLE "UNNColdWarSound"
+ Dependencies {
+  "6495794254265D68" "58D0FB3206B6F859"
+ }
+}
