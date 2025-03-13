@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{BB08F4A65999C2F7}Sounds/Weapons/Machineguns/RPK74/Weapons_Machineguns_RPK74_Handling.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}
