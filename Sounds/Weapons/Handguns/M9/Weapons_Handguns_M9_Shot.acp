@@ -687,6 +687,7 @@ AudioClass {
    pi {
     54 0
    }
+   volume_dB 0
   }
  }
  buses {

@@ -665,6 +665,7 @@ AudioClass {
    pi {
     54 0
    }
+   volume_dB -1
   }
  }
  buses {
@@ -1990,13 +1991,14 @@ AudioClass {
    pi {
     1 0
    }
+   Volume -1
    "Volume variance" 0.5
    "Pitch variance" 1
    Resampler FIR_4
    "Disable streaming" 1
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{03BB6133E9A59FED}Sounds/Weapons/SoundBanks/SVD/SVD_shot_tailV2.wav"
+     Filename "{74B109BB1D07709D}Sounds/Weapons/SoundBanks/SVD/SVD_shot_tailV3.wav"
     }
    }
   }
