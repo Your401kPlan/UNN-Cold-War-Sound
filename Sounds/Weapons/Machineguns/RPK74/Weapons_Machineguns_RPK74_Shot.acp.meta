@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C9A2183C36C7B567}Sounds/Weapons/Machineguns/RPK74/Weapons_Machineguns_RPK74_Shot.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

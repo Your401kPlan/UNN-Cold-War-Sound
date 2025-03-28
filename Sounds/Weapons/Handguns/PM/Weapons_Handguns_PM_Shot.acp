@@ -844,7 +844,7 @@ AudioClass {
    id 422919
    name "Bodies Bus"
    version 7
-   tl 1408 -1488
+   tl 1408 -1489.25
    ctl 0 -21
    ins {
     ConnectionsClass connections {
@@ -2056,7 +2056,7 @@ AudioClass {
    pi {
     1 0
    }
-   Volume -5
+   Volume -60
    "Volume variance" 0.5
    Pitch 9.742
    "Pitch variance" 0.4
@@ -2784,11 +2784,10 @@ AudioClass {
    pi {
     1 0
    }
-   Volume -2
+   Volume -60
    "Volume variance" 0.5
    Pitch 1.1
    "Pitch variance" 0.8
-   Resampler FIR_4
    "Disable streaming" 1
    Samples {
     AudioBankSampleClass Sample {
@@ -2808,7 +2807,7 @@ AudioClass {
    id 456708
    name "AL Pistol Far"
    version 7
-   tl 466.6 -943
+   tl 466.6 -944
    ins {
     ConnectionsClass connections {
      id 0
