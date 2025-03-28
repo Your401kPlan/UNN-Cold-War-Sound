@@ -3753,15 +3753,19 @@ AudioClass {
    "Fade out time" 60
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{9DDAF15F96A9ABFD}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_01.wav"
+     Filename "{7C5CE3E0762A2004}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_US_01.wav"
     }
     AudioBankSampleClass Sample {
-     Filename "{73CE204E7FEC751D}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_03.wav"
+     Filename "{E5425A796BCD1194}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_US_02.wav"
      Index 1
     }
     AudioBankSampleClass Sample {
-     Filename "{04C448C68B4E9A6D}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_02.wav"
+     Filename "{924832F19F6FFEE4}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_US_03.wav"
      Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{958FC8A0F9E94427}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_US_04.wav"
+     Index 3
     }
    }
   }

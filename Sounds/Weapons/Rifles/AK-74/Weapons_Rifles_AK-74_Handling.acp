@@ -1,28 +1,6 @@
 AudioClass {
  signals {
   SignalClass {
-   id 63501
-   name "Signal Occlusion"
-   tl -832 -2080
-   res "{6DFC123D28CCC546}Sounds/_SharedData/Signals/Weapons/Weapon_Occlusion.sig"
-   inputsport {
-    1 2 8 10 36 53 54 100
-   }
-   outputsport {
-    5 42
-   }
-   inputvalues {
-    0 0 0 0 0 1000 1000 0
-   }
-   inputvaluesmin {
-    0 0 0 0 0 0 0 0
-   }
-   inputvaluesmax {
-    1 1 1 1 1 10000 10000 1
-   }
-   path "{6DFC123D28CCC546}Sounds/_SharedData/Signals/Weapons/Weapon_Occlusion.sig"
-  }
-  SignalClass {
    id 81933
    name "Signal 70"
    tl -1277.333 -877.222
@@ -75,18 +53,40 @@ AudioClass {
    path "{8892979EFCA49B59}Sounds/_SharedData/Signals/SimpleHelpers/RandomDelay.sig"
   }
   SignalClass {
-   id 96269
-   name "Signal Reverb"
-   tl -108.583 -1318.283
+   id 98317
+   name "WPN Handling Spatiality"
+   tl -1008 -2304
+   res "{1387EB9E4DBEB1F2}Sounds/_SharedData/Signals/Weapons/Spatiality/Weapons_Handling_Spatiality.sig"
+   inputsport {
+    1 3
+   }
+   outputsport {
+    9
+   }
+   inputvalues {
+    0 1
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+   path "{1387EB9E4DBEB1F2}Sounds/_SharedData/Signals/Weapons/Spatiality/Weapons_Handling_Spatiality.sig"
+  }
+  SignalClass {
+   id 103437
+   name "Reverb Base"
+   tl 64 -1664
    res "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
    inputsport {
     1 35 40 112 139
    }
    outputsport {
-    34 39 105 106 107 110
+    34 39 105 107 106 110
    }
    inputvalues {
-    40 0 0 16000 16000
+    100 0.5 0.5 16000 16000
    }
    inputvaluesmin {
     0 0 0 0 0
@@ -97,26 +97,26 @@ AudioClass {
    path "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
   }
   SignalClass {
-   id 97293
-   name "Signal 56"
-   tl -1040 -2384
-   res "{B0940E284D98C2C1}Sounds/_SharedData/Signals/Weapons/Weapon_UnderPlayerControl_1p_3p_Cam.sig"
+   id 104461
+   name "Occlusion Props"
+   tl -1008 -2192
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
    inputsport {
-    1 7 21 28 31 34 36
+    1 23 52 56
    }
    outputsport {
-    2 6 8 9 12 26 30 33 40 43 45 46
+    5 37
    }
    inputvalues {
-    1 0 0 1 0 0 0
+    0 0 1000 400
    }
    inputvaluesmin {
-    0 0 0 0 0 0 0
+    0 0 0 0
    }
    inputvaluesmax {
-    1 1 9999 1 1 1 1
+    1 1 10000 10000
    }
-   path "{B0940E284D98C2C1}Sounds/_SharedData/Signals/Weapons/Weapon_UnderPlayerControl_1p_3p_Cam.sig"
+   path "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
   }
  }
  sounds {
@@ -147,7 +147,7 @@ AudioClass {
    id 37897
    name "SOUND_DRY"
    version 5
-   tl -588.571 -917.667
+   tl -592 -912
    ins {
     ConnectionsClass connections {
      id 64
@@ -238,7 +238,7 @@ AudioClass {
    id 87049
    name "SOUND_RELOAD_MAG_INSERT"
    version 5
-   tl -589.821 -306.19
+   tl -588.571 -306.19
    ins {
     ConnectionsClass connections {
      id 64
@@ -309,16 +309,12 @@ AudioClass {
    id 73739
    name "OutputState"
    version 4
-   tl -108.583 -975.667
+   tl 67.417 -1087.667
    res "{B764D803219C775E}Sounds/FinalMix.afm"
    ins {
     ConnectionsClass connections {
      id 6151
      links {
-      ConnectionClass connection {
-       id 3081
-       port 65
-      }
       ConnectionClass connection {
        id 50185
        port 65
@@ -329,6 +325,10 @@ AudioClass {
       }
       ConnectionClass connection {
        id 72713
+       port 65
+      }
+      ConnectionClass connection {
+       id 3081
        port 65
       }
       ConnectionClass connection {
@@ -355,30 +355,39 @@ AudioClass {
      }
     }
     ConnectionsClass connections {
-     id 152583
+     id 300039
      links {
       ConnectionClass connection {
-       id 83997
+       id 99357
        port 65
       }
      }
     }
     ConnectionsClass connections {
-     id 197639
+     id 301063
      links {
       ConnectionClass connection {
-       id 86045
+       id 102429
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 302087
+     links {
+      ConnectionClass connection {
+       id 100381
        port 65
       }
      }
     }
    }
    pi {
-    8421379 0
+    939524099 0
    }
    path "{B764D803219C775E}Sounds/FinalMix.afm"
    inputs {
-    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "Dialog_Delay_Exterior"
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
    }
   }
  }
@@ -459,7 +468,7 @@ AudioClass {
     }
    }
    pi {
-    23 0
+    7 0
    }
   }
   ShaderClass {
@@ -510,7 +519,7 @@ AudioClass {
     }
    }
    pi {
-    23 0
+    7 0
    }
   }
   ShaderClass {
@@ -557,7 +566,7 @@ AudioClass {
     }
    }
    pi {
-    23 0
+    7 0
    }
   }
   ShaderClass {
@@ -604,7 +613,7 @@ AudioClass {
     }
    }
    pi {
-    23 0
+    7 0
    }
   }
   ShaderClass {
@@ -651,7 +660,7 @@ AudioClass {
     }
    }
    pi {
-    23 0
+    7 0
    }
   }
   ShaderClass {
@@ -698,7 +707,7 @@ AudioClass {
     }
    }
    pi {
-    23 0
+    7 0
    }
   }
   ShaderClass {
@@ -745,7 +754,7 @@ AudioClass {
     }
    }
    pi {
-    23 0
+    7 0
    }
   }
   ShaderClass {
@@ -796,7 +805,7 @@ AudioClass {
     }
    }
    pi {
-    23 0
+    7 0
    }
   }
  }
@@ -841,8 +850,8 @@ AudioClass {
      id 4
      links {
       ConnectionClass connection {
-       id 63501
-       port 42
+       id 104461
+       port 37
       }
      }
     }
@@ -882,14 +891,15 @@ AudioClass {
    id 39940
    name "MagOut"
    version 7
-   tl -1075.476 -516.703
-   Volume 6
+   tl -1075.476 -515.453
+   Volume 1
    "Volume variance" 1
    "Pitch variance" 0.69
    Resampler FIR_4
    Samples {
     AudioBankSampleClass Sample {
      Filename "{BEFF560CEA79565A}Sounds/Weapons/SoundBanks/AK74/AK_Magout.wav"
+     Index 1
     }
    }
   }
@@ -898,7 +908,7 @@ AudioClass {
    name "MagIn"
    version 7
    tl -1078.81 -306.19
-   Volume 3
+   Volume 5
    "Volume variance" 1
    "Pitch variance" 0.69
    Resampler FIR_4
@@ -912,10 +922,9 @@ AudioClass {
    id 43012
    name "BoltPull"
    version 7
-   tl -1077.143 -81.429
-   Volume 6.5
+   tl -1077.143 -82.429
+   Volume 9
    "Volume variance" 1
-   Pitch -2
    "Pitch variance" 0.69
    Selection Random
    Resampler FIR_4
@@ -932,9 +941,8 @@ AudioClass {
    version 7
    tl -1074.286 210.603
    ctl 0 -21
-   Volume 9.2
+   Volume 12
    "Volume variance" 1
-   Pitch -2
    "Pitch variance" 0.69
    Selection Random
    Resampler FIR_4
@@ -1026,7 +1034,7 @@ AudioClass {
    pi {
     16 0
    }
-   Volume 12
+   Volume 5
    "Volume variance" 1
    "Pitch variance" 0.65
    Resampler FIR_4
@@ -1125,42 +1133,42 @@ AudioClass {
   }
  }
  spatialities {
-  SpatialityClass : "{3E728F2490D6D7BE}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_Handling.conf" {
+  SpatialityClass : "{68C6E66C2A370788}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal_Update.conf" {
    id 51228
-   name "Spatiality Weapon Handling"\
-   ""
    version 5
    tl -832 -2304
-   parent "{3E728F2490D6D7BE}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_Handling.conf"
+   parent "{68C6E66C2A370788}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal_Update.conf"
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 97293
+       id 98317
        port 9
       }
      }
     }
    }
+   pi + {
+    0
+   }
+   pu {
+    1 0
+   }
   }
  }
  auxOuts {
   AuxOutClass {
-   id 83997
-   name "AuxOut Reverb INT"
+   id 99357
+   name "AuxOut Rev Small"
    version 5
-   tl -108.583 -1196.077
+   tl 64 -1472
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 3081
-       port 5
-      }
-      ConnectionClass connection {
-       id 37897
+       id 47113
        port 5
       }
       ConnectionClass connection {
@@ -1168,11 +1176,15 @@ AudioClass {
        port 5
       }
       ConnectionClass connection {
-       id 47113
+       id 72713
        port 5
       }
       ConnectionClass connection {
-       id 72713
+       id 37897
+       port 5
+      }
+      ConnectionClass connection {
+       id 3081
        port 5
       }
       ConnectionClass connection {
@@ -1193,8 +1205,8 @@ AudioClass {
      id 1
      links {
       ConnectionClass connection {
-       id 96269
-       port 34
+       id 103437
+       port 107
       }
      }
     }
@@ -1202,7 +1214,7 @@ AudioClass {
      id 2
      links {
       ConnectionClass connection {
-       id 96269
+       id 103437
        port 39
       }
      }
@@ -1211,23 +1223,23 @@ AudioClass {
    pi {
     7 0
    }
-   OSPort 152583
+   OSPort 300039
   }
   AuxOutClass {
-   id 86045
-   name "AuxOut Reverb EXT"
+   id 100381
+   name "AuxOut Rev Large"
    version 5
-   tl -108.583 -1073.872
+   tl 64 -1216
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 3081
+       id 47113
        port 5
       }
       ConnectionClass connection {
-       id 37897
+       id 72713
        port 5
       }
       ConnectionClass connection {
@@ -1235,11 +1247,11 @@ AudioClass {
        port 5
       }
       ConnectionClass connection {
-       id 47113
+       id 37897
        port 5
       }
       ConnectionClass connection {
-       id 72713
+       id 3081
        port 5
       }
       ConnectionClass connection {
@@ -1260,16 +1272,92 @@ AudioClass {
      id 1
      links {
       ConnectionClass connection {
-       id 96269
-       port 105
+       id 103437
+       port 110
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 103437
+       port 39
       }
      }
     }
    }
    pi {
-    3 0
+    7 0
    }
-   OSPort 197639
+   OSPort 302087
+  }
+  AuxOutClass {
+   id 102429
+   name "AuxOut Rev Medium"
+   version 5
+   tl 64 -1344
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 72713
+       port 5
+      }
+      ConnectionClass connection {
+       id 50185
+       port 5
+      }
+      ConnectionClass connection {
+       id 47113
+       port 5
+      }
+      ConnectionClass connection {
+       id 37897
+       port 5
+      }
+      ConnectionClass connection {
+       id 3081
+       port 5
+      }
+      ConnectionClass connection {
+       id 87049
+       port 5
+      }
+      ConnectionClass connection {
+       id 88073
+       port 5
+      }
+      ConnectionClass connection {
+       id 89097
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 103437
+       port 106
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 103437
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 301063
   }
  }
  version 1
